@@ -1,0 +1,40 @@
+.project__item {
+  --bg-image: url('../images/analysis-photo.png');
+  background: var(--bg-image);
+  min-height: 350px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-position: top center;
+}
+
+.project__item:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsla(246, 54%, 29%, 0.452);
+}
+
+.project__item .card {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  bottom: 5%;
+  padding: 1rem;
+}
+.project__item:hover .card {
+  display: flex;
+  z-index: 30;
+}
+
+.project__item .card::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background: var(--color-gray-dark);
+  width: 0.4rem;
+  height: 83%;
+}

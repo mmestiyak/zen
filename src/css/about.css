@@ -1,0 +1,51 @@
+.about__bg {
+  background: url('../images/bg-about.png');
+  background-size: cover;
+  background-position: top center;
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.about__photo-wrapper {
+  background: transparent;
+  position: absolute;
+  width: 76%;
+  bottom: 0%;
+  right: -20%;
+  height: 71%;
+}
+.about__photo {
+  max-width: 85%;
+  height: 85%;
+  object-fit: cover;
+  transform: translateY(31%);
+  border: 2.5em solid #fff;
+}
+
+.wireframe__title {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: var(--color-grey-dark);
+}
+
+.wireframe__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1rem;
+  background: #c3c0ecda;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wireframe__icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: var(--color-blue-dark);
+  padding: 0.4em;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,12 @@
+
+.navbar-brand {
+  font-family: Poppins, sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}

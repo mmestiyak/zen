@@ -1,0 +1,34 @@
+.service__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1rem;
+  --icon-bg: hsl(23, 97%, 58%);
+  --icon-border: hsl(23, 97%, 90%);
+  background: var(--icon-border);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service__icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: var(--icon-bg);
+  padding: 0.4em;
+  border-radius: 0.25rem;
+}
+
+.service__icon img {
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
+}
+
+.service .card-title {
+  font-family: Poppins, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+}

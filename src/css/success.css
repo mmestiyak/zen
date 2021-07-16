@@ -1,0 +1,19 @@
+.success {
+  background: var(--color-blue-dark);
+}
+.success__stats {
+  color: #fff;
+}
+.success__countup {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.success .section__subtitle--2::after,
+.success .section__subtitle--2::before,
+.success .section__subtitle--2 span::after,
+.success .section__subtitle--2 span::before {
+  background: #fff;
+}
