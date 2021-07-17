@@ -12,9 +12,9 @@
 .newsletter__form input:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #5b4ece;
+  border-color: var(--border-color-on-focus);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #4e44a76b;
+  box-shadow: 0 0 0 0.25rem var(--box-shadow-on-focus);
 }
 
 .newsletter p {
@@ -25,28 +25,14 @@
   width: 3.5rem;
   height: 3.5rem;
   outline: none;
-  background: var(--color-blue-dark);
+  background: var(--bg-send-button);
   position: absolute;
   right: 1%;
   top: 12%;
 }
 
 .newsletter__send-button:hover {
-  background: var(--color-blue-dark-1);
-}
-
-.newsletter__send-button--2 {
-  width: 3.5rem;
-  height: 3.5rem;
-  outline: none;
-  background: var(--color-orange-light);
-  position: absolute;
-  right: 1%;
-  top: 12%;
-}
-
-.newsletter__send-button--2:hover {
-  background: var(--color-orange-dark);
+  background: var(--bg-on-send-button-hover);
 }
 
 .newsletter__form-input {

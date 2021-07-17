@@ -8,7 +8,7 @@ const About = () => {
     <section className="about">
       <Container>
         <Row className="gx-5 d-flex align-items-center justify-content-center">
-          <Col md="5 mb-5">
+          <Col md="5">
             <div className="about__bg rounded-3">
               <div className="about__photo-wrapper">
                 <img

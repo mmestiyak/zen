@@ -30,11 +30,26 @@
   z-index: 30;
 }
 
+/* .project .card-body {
+  border-left: 1px solid var(--color-gray-dark);
+  padding-top: 2rem;
+} */
 .project__item .card::after {
   position: absolute;
   content: '';
   display: inline-block;
   background: var(--color-gray-dark);
-  width: 0.4rem;
-  height: 83%;
+  width: 0.8px;
+  height: 60%;
+}
+
+.project__item-title {
+  font-size: 2.2rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+.project .card-text {
+  color: var(--color-gray-dark);
+  font-weight: 400;
 }

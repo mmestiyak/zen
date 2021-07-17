@@ -33,8 +33,9 @@ const Feedback = () => {
             </p>
             <Button>Give feedback</Button>
           </Col>
-          <Col md="6">
+          <Col md="6 feedback__slider-col">
             <Swiper
+              className="feedback__slider"
               onInit={(swiper) => {
                 swiper.params.navigation.prevEl = prevRef.current;
                 swiper.params.navigation.nextEl = nextRef.current;
@@ -42,6 +43,7 @@ const Feedback = () => {
                 swiper.navigation.update();
               }}
             >
+              <span></span>
               <SwiperSlide className="shadow-sm">
                 <Card className="feedback__item border-0 rounded-3 p-4">
                   <CardBody>
@@ -78,10 +80,10 @@ const Feedback = () => {
                         alt=""
                       />
                       <div>
-                        <h3 className="feedback__item-client">
-                          Laverne K. Avis
-                        </h3>
-                        <p className="feedback__item-client-title">CEO</p>
+                        <h3 className="feedback__item-client">Meer Estiyak</h3>
+                        <p className="feedback__item-client-title">
+                          Managing Director
+                        </p>
                       </div>
                     </div>
 

@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,8 +12,7 @@ html {
 
 body {
   font-family: 'Chivo', sans-serif;
-  font-weight:300;
-  background: #F8F9FE;
-
+  font-weight: 300;
+  background: #f8f9fe;
+  overflow-x: hidden;
 }
-

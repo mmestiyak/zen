@@ -41,3 +41,8 @@
 .footer ul li {
   font-size: 1.6rem;
 }
+
+.footer p.copyright {
+  font-size: 2rem;
+  padding-top: 5rem;
+}

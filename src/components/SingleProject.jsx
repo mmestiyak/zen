@@ -10,7 +10,7 @@ const SingleProject = ({ title, desc, bg }) => {
       >
         <Card className="rounded-3">
           <CardBody>
-            <CardTitle>{title}</CardTitle>
+            <CardTitle className="project__item-title">{title}</CardTitle>
             <CardText>{desc}</CardText>
           </CardBody>
         </Card>

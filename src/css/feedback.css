@@ -18,3 +18,21 @@
 .feedback .swiper-button-disabled img {
   opacity: 50%;
 }
+
+.feedback__item-text {
+  padding-bottom: 7rem;
+}
+.feedback__slider span::after {
+  content: '';
+  display: block;
+  background: url(../images/quote.svg);
+  width: 6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5rem;
+  top: botto;
+  position: absolute;
+  z-index: 99;
+  bottom: 19%;
+  right: 6%;
+}

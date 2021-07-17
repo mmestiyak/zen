@@ -1,14 +1,15 @@
 import React from 'react';
 import { Col, Container, Jumbotron, Row } from 'reactstrap';
 import { socialMediaIcons } from '../images';
+import NewsletterForm from './NewsletterForm';
 const { facebook, twitter, linkedin, instagram } = socialMediaIcons;
 const Footer = () => {
   return (
     <footer className="footer mt-5">
       <Container>
         <Jumbotron>
-          <Row className="g-5 d-flex">
-            <Col md="4">
+          <Row className="g-5 pb-5 d-flex">
+            <Col md="4 order-0">
               <a href="/" className="text-white text-uppercase navbar-brand">
                 zen
               </a>
@@ -16,7 +17,7 @@ const Footer = () => {
                 Morbi in sem quis dui placar Pellentesque odio nisi, euismod in,
                 pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
               </p>
-              <div className="social-medias mt-4">
+              <div className="social-medias d-flex mt-4">
                 <a
                   href="#"
                   className="border border-white rounded-circle p-2 social-media-icon"
@@ -44,10 +45,10 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col md="4 d-flex justify-content-around">
+            <Col md="4  order-1 order-md-0 d-flex justify-content-around">
               <div>
                 <h2>Menu</h2>
-                <ul className="p-0 d-flex flex-column justify-content-between">
+                <ul className="p-0 d-flex  flex-column justify-content-between">
                   <li>
                     <a href="#">Home</a>
                   </li>
@@ -80,14 +81,25 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col md="4">
+            <Col md="4 py-5 py-md-0">
               <h2>Subscribe Newsletter</h2>
               <p className="text-white">
                 Morbi in sem quis dui placar Pellentesque odio nisi, euismod in,
                 pharetra a.
               </p>
+              <NewsletterForm
+                bgSendButton="var(--color-orange-light)"
+                bgSendButtonHover="var(--color-orange-dark)"
+                borderColorOnFocus="var(--color-orange-light)"
+                boxShadowOnFocus="#ff861878"
+              />
             </Col>
           </Row>
+          <hr />
+          <p className="text-white text-center copyright">
+            Morbi in sem quis dui placar Pellentesque odio nisi, euismod in,
+            pharetra a.
+          </p>
         </Jumbotron>
       </Container>
     </footer>
