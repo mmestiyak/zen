@@ -44,8 +44,11 @@ const HeroSlider = () => {
         clickable: true,
       }}
     >
-      {slides.map(({ title, subtitle, pragraph }) => (
-        <SwiperSlide className="d-flex flex-column align-items-center  justify-content-center">
+      {slides.map(({ id, title, subtitle, pragraph }) => (
+        <SwiperSlide
+          key={id}
+          className="d-flex flex-column align-items-center  justify-content-center"
+        >
           <h2 className="hero__subtitle text-center">{subtitle}</h2>
           <h1 className="display-1 hero__title text-uppercase text-center my-4">
             {title[0]}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Card, CardTitle, CardBody, CardText } from 'reactstrap';
 
 const SingleService = ({ iconBg, iconBorder, title, desc, icon }) => {
-  console.log(iconBg, iconBorder);
   return (
     <Col md="4">
       <Card className="border-0 rounded-3 p-4">
