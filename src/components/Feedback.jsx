@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Container, Col, Row, Card, CardBody, CardText } from 'reactstrap';
 import Button from './Button';
 
@@ -18,12 +18,30 @@ SwiperCore.use([Navigation]);
 const Feedback = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    window.addEventListener(
+      'resize',
+      () => {
+        const ismobile = window.innerWidth < 768;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+      },
+      false
+    );
+  }, [isMobile]);
   return (
     <section className="feedback">
       <Container>
         <Row className="g-5 d-flex align-items-center">
           <Col md="6 d-flex flex-column align-items-center d-md-block">
-            <h3 className="section__subtitle">Feedback</h3>
+            <h3
+              className={`${
+                isMobile ? 'section__subtitle--2' : 'section__subtitle'
+              }`}
+            >
+              <span></span>
+              Feedback
+            </h3>
             <h2 className="text-center text-md-start display-1 section__title">
               Clients Give Us Excellent Feedback
             </h2>

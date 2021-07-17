@@ -9,6 +9,12 @@
   .hero__pragraph {
     width: 100% !important;
   }
+  section {
+    padding: 5rem 0;
+  }
+  .hero {
+    background-position: center center;
+  }
 }
 
 @media (max-width: 995px) {

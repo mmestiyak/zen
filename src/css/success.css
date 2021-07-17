@@ -3,6 +3,31 @@
   position: relative;
   margin: 8rem 0;
 }
+.success::before {
+  content: '';
+  display: block;
+  background: url(../images/wave.svg);
+  background-repeat: no-repeat;
+  width: 24rem;
+  height: 23rem;
+  z-index: 55;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.success::after {
+  content: '';
+  display: block;
+  background: url(../images/wave.svg);
+  background-repeat: no-repeat;
+  width: 24rem;
+  height: 22rem;
+  z-index: 55;
+  bottom: -1px;
+  position: absolute;
+  right: -1%;
+  transform: rotate(180deg);
+}
 .success__stats {
   color: #fff;
 }

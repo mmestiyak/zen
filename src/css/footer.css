@@ -4,8 +4,10 @@
   background: var(--color-blue-dark-1);
 }
 
-.footer p {
+.footer p,
+a {
   font-size: 1.6rem;
+  font-weight: 400;
 }
 .social-media {
   display: flex;

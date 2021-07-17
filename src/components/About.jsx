@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Button from './Button';
 import couple from '../images/couple.jpg';
 
 const About = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    window.addEventListener(
+      'resize',
+      () => {
+        const ismobile = window.innerWidth < 768;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+      },
+      false
+    );
+  }, [isMobile]);
   return (
     <section className="about">
       <Container>
@@ -19,8 +31,15 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col md="7">
-            <h3 className="section__subtitle ">About us</h3>
+          <Col md="7 mt-5 mt-md-0">
+            <h3
+              className={`${
+                isMobile ? 'section__subtitle--2' : 'section__subtitle'
+              } justify-content-md-start d-flex justify-content-center`}
+            >
+              <span></span>
+              About us
+            </h3>
             <h2 className="display-1 d-inline-block  section__title text-center text-md-start">
               We Are a Cutting{' '}
               <span className="d-md-block">Edge Digital Agency</span>
@@ -59,7 +78,9 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <Button className="mt-5">learn more</Button>
+            <div className="d-flex justify-content-center d-md-block">
+              <Button className="mt-5">learn more</Button>
+            </div>
           </Col>
         </Row>
       </Container>
