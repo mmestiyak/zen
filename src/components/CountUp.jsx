@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useCountUp } from 'react-countup';
 import { InView } from 'react-intersection-observer';
-const CountUp = ({ end }) => {
+const CountUp = ({ end, className }) => {
   const [inView, setInView] = React.useState(false);
   const { countUp, start } = useCountUp({
     end: end,
@@ -14,7 +14,7 @@ const CountUp = ({ end }) => {
   }, [inView]);
   return (
     <InView onChange={setInView}>
-      <h4 className="success__countup">{countUp}</h4>
+      <h4 className={`${className} success__countup`}>{countUp}</h4>
     </InView>
   );
 };

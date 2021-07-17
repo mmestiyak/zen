@@ -1,0 +1,56 @@
+.newsletter__container {
+  padding: 5.5rem !important;
+}
+.newsletter__title {
+  font-family: Poppins, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.newsletter__form {
+  position: relative;
+}
+.newsletter__form input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #5b4ece;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #4e44a76b;
+}
+
+.newsletter p {
+  font-size: 1.6rem;
+}
+
+.newsletter__send-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: none;
+  background: var(--color-blue-dark);
+  position: absolute;
+  right: 1%;
+  top: 12%;
+}
+
+.newsletter__send-button:hover {
+  background: var(--color-blue-dark-1);
+}
+
+.newsletter__send-button--2 {
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: none;
+  background: var(--color-orange-light);
+  position: absolute;
+  right: 1%;
+  top: 12%;
+}
+
+.newsletter__send-button--2:hover {
+  background: var(--color-orange-dark);
+}
+
+.newsletter__form-input {
+  height: 4.7rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+}

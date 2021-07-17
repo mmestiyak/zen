@@ -7,6 +7,11 @@ import Service from './Service';
 import Analysis from './Analysis';
 import Project from './Project';
 import Success from './Success';
+import Feedback from './Feedback';
+import Newsletter from './Newsletter';
+import Blog from './Blog';
+import ClientLogosSlider from './ClientLogosSlider';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
       <Analysis />
       <Project />
       <Success />
+      <Feedback />
+      <Newsletter />
+      <Blog />
+      <ClientLogosSlider />
+      <Footer />
     </>
   );
 }

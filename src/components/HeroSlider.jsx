@@ -51,7 +51,7 @@ const HeroSlider = () => {
             {title[0]}
             <span className="d-md-block d-inline"> {title[1]}</span>
           </h1>
-          <p className="hero__pragraph text-center text-white w-50">
+          <p className="hero__pragraph text-center text-white w-50 ">
             {pragraph}
           </p>
         </SwiperSlide>

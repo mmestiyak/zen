@@ -8,14 +8,12 @@ import Navbar from './Navbar';
 const Hero = () => {
   return (
     <div className="hero text-white">
-      <Container fluid>
-        <Navbar />
-        <Container>
-          <Jumbotron>
-            <HeroSlider />
-            <HeroActions />
-          </Jumbotron>
-        </Container>
+      <Navbar />
+      <Container>
+        <Jumbotron>
+          <HeroSlider />
+          <HeroActions />
+        </Jumbotron>
       </Container>
     </div>
   );

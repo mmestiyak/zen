@@ -11,4 +11,21 @@ export default {
   project4: require('./project-4.png').default,
   project5: require('./project-5.png').default,
   project6: require('./project-6.png').default,
+  emoji: require('./emoji.svg').default,
+  list: require('./list.svg').default,
+  medal: require('./medal.svg').default,
+  increase: require('./increase.svg').default,
+  google: require('./google.png').default,
+  godaddy: require('./godaddy.png').default,
+  fedex: require('./fedex.png').default,
+  adidas: require('./adidas.png').default,
+  sunlife: require('./sunlife.png').default,
+  intel: require('./intel.png').default,
+};
+
+export const socialMediaIcons = {
+  facebook: require('./facebook.svg').default,
+  twitter: require('./twitter.svg').default,
+  linkedin: require('./linkedin.svg').default,
+  instagram: require('./instagram.svg').default,
 };

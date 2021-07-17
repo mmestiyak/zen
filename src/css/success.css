@@ -1,5 +1,7 @@
 .success {
   background: var(--color-blue-dark);
+  position: relative;
+  margin: 8rem 0;
 }
 .success__stats {
   color: #fff;

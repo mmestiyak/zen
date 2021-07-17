@@ -6,15 +6,19 @@
   --color-blue-dark-1: #0a053e;
   --color-gray-dark: #333333;
   --color-gray: #666666;
+  --swiper-theme-color: var(--color-orange-dark) !important;
 }
 
 p {
   font-size: 1.8rem;
   color: var(--color-gray);
 }
-a {
+a,
+a:hover {
   color: inherit;
   font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
 }
 
 .button {
@@ -112,4 +116,11 @@ section {
   font-weight: 600;
   color: var(--color-gray-dark);
   margin: 2rem 0;
+}
+
+.clients-logo {
+  opacity: 20%;
+}
+.clients-logo:hover {
+  opacity: 100%;
 }

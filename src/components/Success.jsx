@@ -4,7 +4,7 @@ import SuccessStats from './SuccessStats';
 
 const Success = () => {
   return (
-    <section className="success rounded-3">
+    <section className="success p-5 rounded-3">
       <Container>
         <h3 className="section__subtitle--2 d-flex justify-content-center text-white">
           {' '}

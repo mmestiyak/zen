@@ -8,11 +8,11 @@ const About = () => {
     <section className="about">
       <Container>
         <Row className="gx-5 d-flex align-items-center justify-content-center">
-          <Col md="5">
+          <Col md="5 mb-5">
             <div className="about__bg rounded-3">
               <div className="about__photo-wrapper">
                 <img
-                  className="about__photo rounded-3"
+                  className="about__photo img-fluid rounded-3"
                   src={couple}
                   alt="Young couple thinking over mortgage"
                 />
@@ -25,7 +25,7 @@ const About = () => {
               We Are a Cutting{' '}
               <span className="d-md-block">Edge Digital Agency</span>
             </h2>
-            <p className="mt-5 text-center text-md-start">
+            <p className="mt-5  text-center text-md-start">
               Morbi in sem quis dui placerat ornare. Pellentes pharetraultricies
               in, diam. Sed arcu. Cras consequat.Praesent dapibus
             </p>

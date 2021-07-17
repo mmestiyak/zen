@@ -1,0 +1,20 @@
+.feedback__item-photo {
+  width: 9rem;
+  height: 9rem;
+}
+
+.feedback .buttons button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.feedback .buttons button:first-child {
+  transform: rotate(180deg);
+  margin-right: 3rem;
+}
+
+.feedback .swiper-button-disabled img {
+  opacity: 50%;
+}

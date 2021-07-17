@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Navbar as NavbarBootstrap,
   NavbarBrand,
@@ -7,6 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Container,
 } from 'reactstrap';
 
 import { nanoid } from 'nanoid';
@@ -49,24 +50,26 @@ const Navbar = () => {
     },
   ];
   return (
-    <NavbarBootstrap className="p-5" expand="md">
-    <NavbarBrand className="text-white text-uppercase" href="/">
-      zen
-    </NavbarBrand>
-    <NavbarToggler onClick={toggle} />
-    <Collapse isOpen={isOpen} navbar>
-      <Nav className="ms-auto  d-flex align-items-center" navbar>
-        {navItems.map(({ name, slug, id }) => (
-          <NavItem key={id}>
-            <NavLink className="text-uppercase px-3 text-white" href={slug}>{name}</NavLink>
-          </NavItem>
-        ))}
-        <Button className="mx-md-2 mx-0">
-          get a quote
-        </Button>
-      </Nav>
-    </Collapse>
-  </NavbarBootstrap>
+    <Container fluid>
+      <NavbarBootstrap className="p-5" expand="md">
+        <NavbarBrand className="text-white text-uppercase" href="/">
+          zen
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ms-auto  d-flex align-items-center" navbar>
+            {navItems.map(({ name, slug, id }) => (
+              <NavItem key={id}>
+                <NavLink className="text-uppercase px-3 text-white" href={slug}>
+                  {name}
+                </NavLink>
+              </NavItem>
+            ))}
+            <Button className="mx-md-2 mx-0">get a quote</Button>
+          </Nav>
+        </Collapse>
+      </NavbarBootstrap>
+    </Container>
   );
 };
 

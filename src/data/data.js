@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 
-// Imported Services Icons & Project Images
+// Imported Services & Stats Icons & Project Images
 import images from '../images';
 
 // Get Services
@@ -111,5 +111,71 @@ export const getProjects = () => [
     title: `Cyber Security`,
     desc: `Cyber Security Consultancy`,
     bg: images.project6,
+  },
+];
+
+export const getStats = () => [
+  {
+    id: nanoid(),
+    icon: images.emoji,
+    count: 1200,
+    text: 'Happy Customer',
+  },
+  {
+    id: nanoid(),
+    icon: images.list,
+    count: 1300,
+    text: 'Complete Projects',
+  },
+  {
+    id: nanoid(),
+    icon: images.medal,
+    count: 345,
+    text: 'Awards Win',
+  },
+  {
+    id: nanoid(),
+    icon: images.increase,
+    count: 10,
+    text: 'Year Experience',
+  },
+];
+
+export const getClientLogos = () => [
+  {
+    id: nanoid(),
+    logo: images.google,
+  },
+  {
+    id: nanoid(),
+    logo: images.fedex,
+  },
+  {
+    id: nanoid(),
+    logo: images.adidas,
+  },
+  {
+    id: nanoid(),
+    logo: images.intel,
+  },
+  {
+    id: nanoid(),
+    logo: images.godaddy,
+  },
+  {
+    id: nanoid(),
+    logo: images.sunlife,
+  },
+  {
+    id: nanoid(),
+    logo: images.adidas,
+  },
+  {
+    id: nanoid(),
+    logo: images.intel,
+  },
+  {
+    id: nanoid(),
+    logo: images.godaddy,
   },
 ];

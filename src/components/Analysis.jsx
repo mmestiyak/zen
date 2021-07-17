@@ -13,8 +13,8 @@ const Analysis = () => {
   return (
     <section className="section analysis">
       <Container>
-        <Row>
-          <Col md="7">
+        <Row className="d-flex align-items-center justify-content-center">
+          <Col md="7 mb-5">
             <h3 className="section__subtitle">Analysis</h3>
             <h2 className="section__title display-1">Why We Are Best</h2>
             <p>

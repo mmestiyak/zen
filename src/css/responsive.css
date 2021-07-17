@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 50% !important;
+  }
+
+  .newsletter img {
+    width: 1.8rem;
+  }
+  .hero__pragraph {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 995px) {
+  html {
+    font-size: 47% !important;
+  }
+}

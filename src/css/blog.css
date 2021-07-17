@@ -1,0 +1,16 @@
+.blog__date {
+  background: var(--color-orange-dark);
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  transform: rotate(45deg) translateY(-68%);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 1.3em;
+}
+
+.blog__date h3 {
+  transform: rotate(-45deg);
+  font-size: 1.4rem;
+}
