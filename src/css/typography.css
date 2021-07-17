@@ -118,8 +118,8 @@ section {
 }
 
 .clients-logo {
-  opacity: 20%;
+  opacity: 0.2;
 }
 .clients-logo:hover {
-  opacity: 100%;
+  opacity: 1;
 }

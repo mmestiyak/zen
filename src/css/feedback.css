@@ -16,7 +16,7 @@
 }
 
 .feedback .swiper-button-disabled img {
-  opacity: 50%;
+  opacity: 0.6 !important;
 }
 
 .feedback__item-text {
