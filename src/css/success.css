@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   width: 24rem;
   height: 23rem;
-  z-index: 55;
+  z-index: 0;
   top: 0;
   position: absolute;
   left: 0;
@@ -22,11 +22,14 @@
   background-repeat: no-repeat;
   width: 24rem;
   height: 22rem;
-  z-index: 55;
+  z-index: 0;
   bottom: -1px;
   position: absolute;
   right: -1%;
   transform: rotate(180deg);
+}
+.success .container {
+  z-index: 50;
 }
 .success__stats {
   color: #fff;

@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  .success::before {
+    width: 18rem;
+  }
   html {
     font-size: 50% !important;
   }
